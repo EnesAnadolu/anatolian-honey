@@ -9,6 +9,7 @@ export default function Home() {
       <div className="ml-40 ">
         <h4 className="custom-font-headline text-5xl">Hello World</h4>
         <p className="custom-font-body">Very organic, delicious bee products</p>
+        <Image src={"https://www.maeshoney.com/wp-content/uploads/2021/07/colmena.jpg"} alt="bees"/>
       </div>
       
     </main>
