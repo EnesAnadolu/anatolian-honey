@@ -8,11 +8,12 @@ export default function Home() {
       <Header />
       <div className="ml-40 ">
         <h4 className="custom-font-headline text-5xl">Hello World</h4>
-        <h3>Organic Honey</h3>
+        <h3 className="font-weight:bold">Organic Honey</h3>
         <p className="custom-font-body">Very organic, delicious bee products</p>
+        <br />
         <Image
-          width={100}
-          height={100}
+          width={800}
+          height={500}
           src={
             "https://www.maeshoney.com/wp-content/uploads/2021/07/colmena.jpg"
           }
