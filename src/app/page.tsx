@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
       <div className="ml-40 ">
         <h4 className="custom-font-headline text-5xl">Hello World</h4>
-        <h3 className="font-weight:bold">Organic Honey</h3>
+        <h3 className="font-size:bold text-2xl">Organic Honey</h3>
         <p className="custom-font-body">Very organic, delicious bee products</p>
         <br />
         <Image
