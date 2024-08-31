@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -16,15 +11,28 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'Britney';
+  src: url('/fonts/Britney-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: medium;
+}
+
+.custom-font-headline {
+  font-family: 'Britney', sans-serif;
+}
+
+.custom-font-body {
+  font-family: 'Quicksand', sans-serif;
+}
+
 
 @layer utilities {
   .text-balance {
