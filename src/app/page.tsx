@@ -13,8 +13,8 @@ export default function Home() {
         <br />
         <h4>Bartu Melissayı seviyor</h4>
         <Image
-          width={800}
-          height={500}
+          width={300}
+          height={300}
           src={
             "https://www.maeshoney.com/wp-content/uploads/2021/07/colmena.jpg"
           }
