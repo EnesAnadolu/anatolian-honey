@@ -11,6 +11,7 @@ export default function Home() {
         <h3 className="font-weight:bold">Organic Honey</h3>
         <p className="custom-font-body">Very organic, delicious bee products</p>
         <br />
+        <h4>Bartu</h4>
         <Image
           width={800}
           height={500}
