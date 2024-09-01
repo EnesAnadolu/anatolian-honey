@@ -66,7 +66,7 @@ const callsToAction = [
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
-export default function Header() {
+export default function AboutUs() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -76,7 +76,7 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="http://localhost:3000/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt=""
@@ -152,24 +152,43 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/components/blog"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Blog
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/components/hakkimizda"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Hakkımızda
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/components/iletisim"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             İletişim
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-5">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/components/market"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             <ShoppingBagIcon
               width={45}
               className="bg-gray-900 text-white p-3 rounded-full shadow-lg hover:scale-105"
             />
           </a>
-          <Button className="bg-black-900">Üye Ol</Button>
+          <Button className="bg-black-900">
+            <a
+              href="/components/uyeol"
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
+              Üye Ol
+            </a>
+          </Button>
         </div>
       </nav>
       <Dialog
@@ -222,19 +241,19 @@ export default function Header() {
                   </DisclosurePanel>
                 </Disclosure>
                 <a
-                  href="#"
+                  href="/components/blog"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Blog
                 </a>
                 <a
-                  href="#"
+                  href="/components/hakkimizda"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Hakkımızda
                 </a>
                 <a
-                  href="#"
+                  href="/components/iletisim"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   İletişim
@@ -242,7 +261,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/components/uyeol"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Üye Ol
